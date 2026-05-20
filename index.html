@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dumont Restaurante | Self-Service Premium em Umuarama/PR</title>
+  <meta
+    name="description"
+    content="Dumont Restaurante em Umuarama/PR. Self-service premium de almoço, de segunda a sexta, das 11h às 14h. Tradição, sabor e qualidade no coração da cidade."
+  />
+  <meta name="keywords" content="Dumont Restaurante, restaurante em Umuarama, almoço em Umuarama, self-service premium, buffet Umuarama, restaurante Paraná" />
+  <meta name="author" content="Gustavo Pelissari | Web Design" />
+  <meta name="theme-color" content="#FAF7F2" />
+  <meta property="og:title" content="Dumont Restaurante | O almoço que você merecia hoje" />
+  <meta
+    property="og:description"
+    content="Self-service premium no coração de Umuarama. Almoço de segunda a sexta, das 11h às 14h."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/Logo_dumont.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Dumont Restaurante",
+      "image": "assets/images/Logo_dumont.png",
+      "servesCuisine": ["Brasileira", "Self-service", "Almoço"],
+      "priceRange": "$$",
+      "telephone": "+55 44 3424-4752",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paraná, 3594",
+        "addressLocality": "Umuarama",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "14:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "200"
+      }
+    }
+  </script>
+
+  <link rel="preload" href="assets/css/style.css" as="style" />
+  <link rel="preload" href="assets/js/main.js" as="script" />
+  <link rel="icon" href="assets/images/Logo_dumont.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img class="loader-logo" src="assets/images/Logo_dumont.png" alt="" loading="eager" />
+      <span class="loader-line"></span>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Header fixo com menu desktop e painel lateral mobile -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Dumont Restaurante - início">
+        <img src="assets/images/Logo_dumont.png" alt="Dumont Restaurante" width="160" height="88" loading="eager" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <nav class="nav-panel" aria-label="Menu principal">
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#cardapio">Cardápio</a>
+        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+        <a class="nav-link" href="#contato">Contato</a>
+        <a class="btn btn-primary" href="#contato">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero fullscreen com logo centralizada e entrada staggered -->
+    <section class="hero" id="inicio" aria-label="Apresentação do Dumont Restaurante">
+      <div class="container hero-content">
+        <svg class="hero-ornament" width="84" height="28" viewBox="0 0 84 28" fill="none" aria-hidden="true">
+          <path d="M0 14h28M56 14h28" stroke="currentColor" stroke-width="1" />
+          <path d="M42 2 54 14 42 26 30 14 42 2Z" stroke="currentColor" stroke-width="1.4" />
+          <path d="M42 8 48 14 42 20 36 14 42 8Z" fill="currentColor" />
+        </svg>
+
+        <img class="hero-logo" src="assets/images/Logo_dumont.png" alt="Dumont Restaurante" width="300" height="165" loading="eager" />
+
+        <h1 class="hero-title">
+          <span>O almoço que você</span>
+          <span><em>merecia hoje.</em></span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Self-service premium no coração de Umuarama — tradição, sabor e qualidade de segunda a sexta.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Reservar mesa</a>
+          <a class="btn btn-outline" href="#cardapio">Ver cardápio</a>
+        </div>
+      </div>
+
+      <a class="hero-explore" href="#sobre" aria-label="Explorar o site">
+        <span>Explorar</span>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14m0 0 6-6m-6 6-6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- Sobre com texto, estatísticas animadas e visual ornamental -->
+    <section class="section about" id="sobre">
+      <div class="container about-layout">
+        <div class="about-copy reveal">
+          <div class="section-heading">
+            <span class="eyebrow">Nossa História</span>
+            <h2 class="section-title">Tradição <em>aquecida pelo sabor</em></h2>
+          </div>
+
+          <p class="section-copy">
+            O Dumont Restaurante é um ponto de encontro para quem valoriza um almoço bem servido, fresco e preparado com cuidado. No coração de Umuarama, o buffet reúne receitas brasileiras, pratos do dia e aquele tempero de casa que torna a rotina mais gostosa.
+          </p>
+          <p class="section-copy">
+            De segunda a sexta, nossa equipe recebe clientes, famílias e profissionais da cidade com atendimento próximo, variedade no self-service e compromisso com qualidade do primeiro ao último prato.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card reveal" style="--delay: 0.1s;">
+              <span class="stat-number"><span class="counter" data-target="15">0</span>+</span>
+              <span class="stat-label">Anos</span>
+            </div>
+            <div class="stat-card reveal" style="--delay: 0.2s;">
+              <span class="stat-number"><span class="counter" data-target="200">0</span>+</span>
+              <span class="stat-label">Clientes/dia</span>
+            </div>
+            <div class="stat-card reveal" style="--delay: 0.3s;">
+              <span class="stat-number"><span class="counter" data-target="4.8" data-decimals="1">0</span> ★</span>
+              <span class="stat-label">Avaliação</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-frame reveal" data-fallback="Dumont">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Salão do Dumont Restaurante" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+          <svg class="ornament-corner" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M10 10h44v44" stroke="currentColor" stroke-width="1.5" />
+            <path d="M20 20h24v24" stroke="currentColor" stroke-width="1" opacity="0.65" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambiente com grid de imagens e labels em hover -->
+    <section class="section ambience" id="ambiente">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Ambiente</span>
+          <h2 class="section-title">Cada detalhe conta <em>uma história</em></h2>
+          <svg class="ornament-divider" viewBox="0 0 200 20" fill="none" aria-hidden="true">
+            <path d="M0 10h82M118 10h82" stroke="currentColor" stroke-width="1" />
+            <path d="M100 2 108 10 100 18 92 10 100 2Z" fill="currentColor" />
+          </svg>
+        </div>
+
+        <div class="ambience-grid">
+          <article class="gallery-card large reveal" style="--delay: 0.1s;" data-fallback="Salão">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Salão do restaurante" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Salão acolhedor</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 3v8m-3-8v8m6-8v8M4 11h6m-3 0v10M15 3c2.5 1.3 4 3.6 4 6.5s-1.2 5-3 5.5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Almoço com conforto
+              </span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" style="--delay: 0.2s;" data-fallback="Buffet">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80" alt="Buffet e entrada do Dumont" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Buffet fresco</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 13a8 8 0 0 1 16 0H4Zm-1 4h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Variedade diária
+              </span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" style="--delay: 0.3s;" data-fallback="Almoço">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80" alt="Prato do dia do Dumont" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Prato do dia</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                Sabor de casa
+              </span>
+            </div>
+          </article>
+
+          <article class="gallery-card tall reveal" style="--delay: 0.4s;" data-fallback="Dumont">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Restaurante Dumont no horário de almoço" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Tradição local</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                Umuarama/PR
+              </span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" style="--delay: 0.5s;" data-fallback="Frango">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1200&q=80" alt="Frango grelhado do Dumont" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Grelhados</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.4 15.7c-1.8-1.8-1.7-4.8.2-6.8 1.9-1.9 5.1-2.2 7.3-.8l1.6-1.6a2 2 0 1 1 2.9 2.9l-1.6 1.6c1.4 2.2 1.1 5.4-.8 7.3-2 1.9-5 2-6.8.2l-2.8-2.8Z" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                Tempero artesanal
+              </span>
+            </div>
+          </article>
+
+          <article class="gallery-card large reveal" style="--delay: 0.6s;" data-fallback="Feijoada">
+            <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=1200&q=80" alt="Feijoada de sexta do Dumont" loading="lazy" onerror="this.parentElement.classList.add('is-missing'); this.remove();" />
+            <div class="gallery-label">
+              <strong>Feijoada de sexta</strong>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 11h14v3a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  <path d="M8 11V9a4 4 0 0 1 4-4h.4A4.6 4.6 0 0 1 17 9.6V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                Clássico brasileiro
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cardápio com cards no estilo premium do Marbec -->
+    <section class="section menu" id="cardapio">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Cardápio</span>
+          <h2 class="section-title">Sabores que <em>alimentam</em> a alma</h2>
+          <p class="section-copy" style="margin: 18px auto 0;">
+            Seleção dos destaques do almoço Dumont: comida fresca, tempero honesto e variedade para todos os dias.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal" style="--delay: 0.1s;">
+            <span class="menu-badge">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9L12 3Z" fill="currentColor" />
+              </svg>
+              Mais pedido
+            </span>
+            <h3>Prato do Dia</h3>
+            <p>Combinação variada conforme o dia, com saladas frescas, acompanhamentos quentes e receitas preparadas para um almoço completo.</p>
+            <svg class="fork-divider" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 3v8m-3-8v8m6-8v8M4 11h6m-3 0v10M15 3c2.5 1.3 4 3.6 4 6.5s-1.2 5-3 5.5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="price">A consultar</span>
+          </article>
+
+          <article class="menu-card reveal" style="--delay: 0.2s;">
+            <span class="menu-badge">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9L12 3Z" fill="currentColor" />
+              </svg>
+              Da casa
+            </span>
+            <h3>Frango Grelhado</h3>
+            <p>Frango temperado artesanalmente, grelhado no ponto certo e servido com acompanhamentos frescos do buffet.</p>
+            <svg class="fork-divider" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 3v8m-3-8v8m6-8v8M4 11h6m-3 0v10M15 3c2.5 1.3 4 3.6 4 6.5s-1.2 5-3 5.5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="price">A consultar</span>
+          </article>
+
+          <article class="menu-card reveal" style="--delay: 0.3s;">
+            <span class="menu-badge">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9L12 3Z" fill="currentColor" />
+              </svg>
+              Sextou
+            </span>
+            <h3>Feijoada de Sexta</h3>
+            <p>Feijoada completa toda sexta-feira, com acompanhamentos clássicos e sabor generoso para fechar a semana.</p>
+            <svg class="fork-divider" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 3v8m-3-8v8m6-8v8M4 11h6m-3 0v10M15 3c2.5 1.3 4 3.6 4 6.5s-1.2 5-3 5.5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="price">A consultar</span>
+          </article>
+        </div>
+
+        <p class="menu-footer reveal">
+          <a href="#contato">Cardápio completo no local — reserve sua mesa</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Citação com aspas decorativas e linhas ornamentais -->
+    <section class="quote-section">
+      <div class="container reveal">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote class="quote-text">
+          Aqui não se come apenas —<br />
+          se vive um almoço inteiro.
+        </blockquote>
+        <p class="quote-author">— Dumont Restaurante, Umuarama/PR</p>
+      </div>
+    </section>
+
+    <!-- Depoimentos de clientes -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Depoimentos</span>
+          <h2 class="section-title">Quem viveu, <em>recomenda</em></h2>
+          <p class="section-copy" style="margin: 18px auto 0;">
+            A experiência Dumont em palavras de quem já sentou à nossa mesa.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal" style="--delay: 0.1s;">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“Melhor almoço de Umuarama! Buffet sempre variado e atendimento impecável.”</p>
+            <div class="testimonial-person">
+              <span class="avatar">CS</span>
+              <span>
+                <strong class="person-name">Carlos Souza</strong>
+                <span class="person-source">Google Reviews</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay: 0.2s;">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“Comida caseira com qualidade de restaurante premium. Preço justo e porções generosas.”</p>
+            <div class="testimonial-person">
+              <span class="avatar">AP</span>
+              <span>
+                <strong class="person-name">Ana Paula</strong>
+                <span class="person-source">Google Reviews</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal" style="--delay: 0.3s;">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“Frequento há anos. O Dumont é tradição em Umuarama, não tem como errar.”</p>
+            <div class="testimonial-person">
+              <span class="avatar">MO</span>
+              <span>
+                <strong class="person-name">Marcos Oliveira</strong>
+                <span class="person-source">Facebook</span>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de contato com mapa e informações do restaurante -->
+    <section class="section contact" id="contato">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Reservas</span>
+          <h2 class="section-title">Entre em <em>contato</em></h2>
+          <p class="section-copy" style="margin: 18px auto 0;">
+            Fale com nossa equipe para confirmar informações, tirar dúvidas ou reservar sua mesa para o almoço.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <form class="contact-form reveal" name="contato" method="POST" data-netlify="true" aria-label="Formulário de contato">
+            <input type="hidden" name="form-name" value="contato" />
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Nome completo</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+              </div>
+
+              <div class="field">
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Selecione</option>
+                  <option>Reservar mesa</option>
+                  <option>Cardápio do dia</option>
+                  <option>Informações sobre horário</option>
+                  <option>Outro assunto</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Como podemos ajudar?"></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+              <p class="form-success" role="status">Mensagem recebida! Entraremos em contato em breve.</p>
+            </div>
+          </form>
+
+          <aside class="contact-side reveal" style="--delay: 0.15s;">
+            <div class="contact-info">
+              <div class="info-line">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                  <circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7" />
+                </svg>
+                <span>Av. Paraná, 3594 — Umuarama/PR</span>
+              </div>
+
+              <div class="info-line">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M12 7.5V12l3.2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Seg–Sex: 11h–14h</span>
+              </div>
+
+              <div class="info-line">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.2 4.5 9.7 4c.6-.1 1.2.2 1.4.8l1 2.4c.2.5.1 1.1-.3 1.4l-1.4 1.2a11 11 0 0 0 4 4l1.2-1.4c.4-.4 1-.5 1.5-.3l2.4 1c.6.2.9.8.8 1.4l-.5 2.5c-.1.6-.6 1-1.2 1A14.6 14.6 0 0 1 6.2 5.7c0-.6.4-1.1 1-1.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                </svg>
+                <a href="tel:+554434244752">(44) 3424-4752</a>
+              </div>
+            </div>
+
+            <a
+              class="btn btn-whatsapp"
+              href="https://wa.me/554434244752?text=Ol%C3%A1%2C%20Dumont%20Restaurante%21%20Gostaria%20de%20falar%20sobre%20o%20almo%C3%A7o."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chamar no WhatsApp
+            </a>
+
+            <div class="map-frame">
+              <iframe
+                title="Mapa do Dumont Restaurante em Umuarama"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Dumont%20Restaurante%20Av.%20Paran%C3%A1%203594%20Umuarama%20PR&output=embed"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer com logo, links, redes sociais e crédito -->
+  <footer class="site-footer">
+    <div class="container">
+      <img class="footer-logo" src="assets/images/Logo_dumont.png" alt="Dumont Restaurante" width="150" height="82" loading="lazy" />
+
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#ambiente">Ambiente</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="footer-social" aria-label="Redes sociais">
+        <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="4.2" stroke="currentColor" stroke-width="1.7" />
+            <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.7" />
+            <path d="M16.8 7.3h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M14 8.2h2V4.8c-.9-.1-1.7-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.6V12H6v3.8h3V22h3.8v-6.2h3l.5-3.8h-3.5V9.6c0-.9.3-1.4 1.2-1.4Z" fill="currentColor" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://wa.me/554434244752" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7.2 4.5 9.7 4c.6-.1 1.2.2 1.4.8l1 2.4c.2.5.1 1.1-.3 1.4l-1.4 1.2a11 11 0 0 0 4 4l1.2-1.4c.4-.4 1-.5 1.5-.3l2.4 1c.6.2.9.8.8 1.4l-.5 2.5c-.1.6-.6 1-1.2 1A14.6 14.6 0 0 1 6.2 5.7c0-.6.4-1.1 1-1.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="copyright">
+        © 2026 Dumont Restaurante. Site criado por <strong>Gustavo Pelissari</strong> | Web Design
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!--
+    Netlify-ready:
+    - Build command: deixar vazio.
+    - Publish directory: raiz do projeto.
+    - _redirects sugerido, caso precise criar o arquivo no deploy:
+      /*    /index.html   200
+
+    Imagens temporárias por URL externa:
+    - Hero: https://images.unsplash.com/photo-1555396273-367ea4eb4db5
+    - Salão: https://images.unsplash.com/photo-1517248135467-4c7edcad34c4
+    - Buffet/cozinha: https://images.unsplash.com/photo-1551218808-94e220e084d2
+    - Prato do dia: https://images.unsplash.com/photo-1546069901-ba9599a7e63c
+    - Ambiente: https://images.unsplash.com/photo-1414235077428-338989a2e8c0
+    - Frango: https://images.unsplash.com/photo-1532550907401-a500c9a57435
+    - Feijoada/prato brasileiro: https://images.unsplash.com/photo-1543353071-10c8ba85a904
+
+    Imagens finais recomendadas para substituir depois:
+    - assets/images/Logo_dumont.png: logo oficial branca com chapéu. Já existe.
+    - assets/images/hero-bg.jpg: foto do salão ou prato principal.
+    - assets/images/salao.jpg: interior do restaurante.
+    - assets/images/prato-01.jpg: prato do dia.
+    - assets/images/prato-02.jpg: frango grelhado.
+    - assets/images/prato-03.jpg: feijoada.
+    - assets/images/varanda.jpg: detalhe do buffet ou entrada.
+    - assets/images/noturno.jpg: salão cheio no horário do almoço.
+
+    O site funciona sem as imagens acima: os blocos com data-fallback usam
+    background: linear-gradient(135deg, #E8DDD0, #FAF7F2);
+  -->
+</body>
+</html>
+
